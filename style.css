@@ -1,0 +1,250 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
+@-webkit-keyframes zoomanimation {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoomanimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body {
+  font-family: "Open Sans";
+  font-weight: 600;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header {
+  background-image: linear-gradient(to right, white, white, white, #f7931d, #f7931d, #f7931d, #f7931d);
+  height: 95px;
+}
+
+.logo1 {
+  margin-left: 50px;
+  height: 70px;
+  position: absolute;
+  opacity: 0;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.navbar {
+  margin-top: 15px;
+  z-index: 3;
+}
+.navbar a {
+  margin-left: 1px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  margin-top: -10px;
+  color: white;
+  background-color: #f7931d;
+}
+.navbar a:hover {
+  color: white;
+  background-color: rgb(18, 18, 78);
+}
+
+.navbar-toggler-icon {
+  background-image: url(Images/Hamburger.png);
+}
+
+.navbar-toggler {
+  margin-right: -30px;
+  margin-bottom: 35px;
+  border-color: white;
+}
+
+.navbar-brand {
+  background-color: transparent;
+}
+
+.nav-link {
+  background-color: rgb(18, 18, 78);
+}
+
+.icon {
+  border: none;
+}
+
+.forM {
+  height: 95px;
+}
+
+.animate {
+  -webkit-animation: zoomanimation 0.6s;
+  animation: zoomanimation 0.6s;
+}
+
+.c1 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_Checklist__re_2w7v.jpg);
+  background-repeat: none;
+}
+
+.c2 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_stand_out_1oag.jpg);
+  background-repeat: none;
+}
+
+.c3 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_exams_g4ow.jpg);
+  background-repeat: none;
+}
+
+.c4 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_programming_2svr.jpg);
+  background-repeat: none;
+}
+
+.c5 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/thintank.jpg);
+  background-repeat: none;
+}
+
+.c6 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_selection_re_ycpo.jpg);
+  background-repeat: none;
+}
+
+.c7 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/Community.png);
+  background-repeat: none;
+}
+
+.c8 {
+  background-repeat: none;
+  background-size: 100%;
+  background-image: url(Images/undraw_Building_blocks_re_rwls.png);
+  background-repeat: none;
+}
+
+.ci {
+  color: white;
+  background: rgba(0, 0, 0, 0.5019607843);
+  opacity: 0;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+.ci:hover {
+  opacity: 1;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-color: #f7931d;
+}
+
+.btn {
+  color: #04133E;
+  border-color: #f7931d;
+  border-width: 2px;
+  font-size: medium;
+}
+.btn:hover {
+  color: #f7931d;
+  border-color: #04133E;
+  border-width: 2px;
+  font-size: medium;
+}
+
+footer {
+  background: #04133E;
+  padding: -25px -25px;
+}
+
+.number {
+  color: white;
+}
+.number:hover {
+  color: #f7931d;
+}
+
+.row p {
+  margin: 2px;
+}
+
+.Cright {
+  color: #f7931d;
+}
+
+.headers {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.headers video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.headers .container {
+  position: relative;
+  z-index: 2;
+}
+.headers .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1250px) {
+  .logo1 {
+    opacity: 1;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (pointer: coarse) and (hover: none) {
+  .headers {
+    background: url("https://i.ytimg.com/vi/73YjPb875tA/maxresdefault.jpg");
+  }
+  .headers video {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
